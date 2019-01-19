@@ -2,7 +2,7 @@ module.exports = function(sequelize, DataTypes) {
     var Itinerary = sequelize.define("Itinerary", {
         userId:
         {
-            type: DataTypes.STRING,
+            type: DataTypes.INTEGER,
             primaryKey: true,
         },
         recId: 
@@ -20,8 +20,8 @@ module.exports = function(sequelize, DataTypes) {
     });
 
     Itinerary.associate = function(models) {
-        Itinerary.belongsTo(models.User, {foreignKey: 'userId', targetKey: 'id'});
         Itinerary.belongsTo(models.Recommendation, {foreignKey: 'recId', targetKey: 'id'});
+        Itinerary.belongsTo(models.User, {foreignKey: 'userId', targetKey: 'id'});
     };
 
     return Itinerary;

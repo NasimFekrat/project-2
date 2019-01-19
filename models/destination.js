@@ -17,6 +17,10 @@ module.exports = function(sequelize, DataTypes) {
         notNull: true,  
       }
     });
+
+    Destination.associate = function(models) {
+      Destination.hasMany(models.Recommendation, {foreignKey: 'city', targetKey: 'city'});
+  };
     return Destination;
   };
   
