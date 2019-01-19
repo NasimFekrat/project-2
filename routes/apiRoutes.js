@@ -1,11 +1,39 @@
 var db = require("../models");
 
 module.exports = function(app) {
-  // Get all examples
+
+  //Get all destinations
+  app.get("/api/destinations", function(req,res){
+    db.Destination.findAll({}).then(function(allDestinations){
+      res.json(allDestinations);
+    });
+  });
+
+  //Get all recommendations
+  app.get("/api/reccomendations", function(req,res){
+    db.Reccomendation.findAll({}).then(function(reccomendations){
+      res.json(reccomendations)
+    });
+  });
+
+  //Get recommendations by city and category
+  app.get("api/recommendations/:city/:category", function(req,res){
+    db.Reccomendation.findAll({
+      where:{
+        city:city,//add in req.params
+        category:category//add in req.params
+      }
+    }).then(function(citySearch){
+      res.json(citySearch);
+    }).catch(function(err){
+      console.log(err);
+    })
+  });
+
+  //Get user data
   app.get("/api/user", function(req, res) {
-    let id = 1;
     db.User.findAll({
-       where: {id : id} 
+       where: {id : id}//add req.params 
     }).then(function(user) {
       res.json(user);
     }).catch(function(err){
@@ -13,29 +41,23 @@ module.exports = function(app) {
     });
   });
 
-  // search recommendation by city and category
-  app.get("/api/recs", function(req, res) {
-   let city = 'TORONTO';
-   let category = 'event';
-
-   db.Recommendation.findAll({
-   where: {
-          category: category,
-          city: city,
-   },
-    }).then(function(resp) {
-      res.json(resp);
+  // Create User/profile and return userId
+  app.post("api/users",function(req,res){  
+    db.User.create({
+      email:email,//add req.params
+      name:name //add req.params
+    }).then(function(createUser){
+      res.json(createUser);
     }).catch(function(err){
-      console.log (err);
+      console.log(err);
     });
   });
 
-  // Create User/profile and return userId
-  app.post("/api/user", function(req, res) {
-   
-    res.end();
-  });
-
+  // Add to user Itinerary
+  app.post("api/itinerary/:id",function(req,res){
+    db.Itinerary.crea
+  })
+ 
 
   // Route for upsert itinerary
   app.get("/api/addItinerary", function(req, res) {
