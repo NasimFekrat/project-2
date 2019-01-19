@@ -53,38 +53,31 @@ module.exports = function(app) {
     });
   });
 
-  // Add to user Itinerary
+  // Add User Profile/ Update User Profile
   app.post("api/itinerary/:id",function(req,res){
-    res.end();
-  });
-
-  // Route for upsert itinerary
-  app.get("/api/addItinerary", function(req, res) {
-    let userId = 2;
-    let recId = 13;
-    let status = true;
     db.Itinerary.upsert({
       userId: userId,
-      recId: recId,
-      status: status,
-    }).then(function(recordInserted){
-      if (recordInserted){
-        console.log ("record inserted ");
-      }else {
-        console.log ("record updated");
+      redId:redId,
+      status:status
+    }).then(function(addItinerary){
+      if(addItinerary){
+        console.log("New user profile created");
+      }else{
+        console.log("Itinerary item added to user profile");
       }
-      res.json(recordInserted);
+      res.json(addItinerary);
     }).catch(function(err){
-      console.log (err);
-      // show some kind of error
-      res.json(err);
+      console.log(err);
     });
   });
 
   // Delete an example by id
-  app.delete("/api/examples/:id", function(req, res) {
-    db.Example.destroy({ where: { id: req.params.id } }).then(function(dbExample) {
-      res.json(dbExample);
+  app.delete("/api/itinerary/:recId", function(req, res) {
+    db.Itinerary.destroy({
+      where:{recId:req.params.recId}
+    }).then(function(deleteItem) {
+      res.json(deleteItem);
+      console.log("Itinerary item deleted");
     });
   });
 };
