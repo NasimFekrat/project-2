@@ -5,7 +5,7 @@ module.exports = function(app) {
   app.get("/api/user", function(req, res) {
     let id = 1;
     db.User.findAll({
-       where: {id : id} 
+      where: {id : id}
     }).then(function(user) {
       res.json(user);
     }).catch(function(err){
@@ -15,14 +15,14 @@ module.exports = function(app) {
 
   // search recommendation by city and category
   app.get("/api/recs", function(req, res) {
-   let city = 'TORONTO';
-   let category = 'event';
+    let city = "TORONTO";
+    let category = "event";
 
-   db.Recommendation.findAll({
-   where: {
-          category: category,
-          city: city,
-   },
+    db.Recommendation.findAll({
+      where: {
+        category: category,
+        city: city,
+      },
     }).then(function(resp) {
       res.json(resp);
     }).catch(function(err){
@@ -32,7 +32,7 @@ module.exports = function(app) {
 
   // Create User/profile and return userId
   app.post("/api/user", function(req, res) {
-   
+
     res.end();
   });
 
@@ -43,25 +43,22 @@ module.exports = function(app) {
     let recId = 13;
     let status = true;
     db.Itinerary.upsert({
-        userId: userId,
-        recId: recId,
-        status: status,
+      userId: userId,
+      recId: recId,
+      status: status,
     }).then(function(recordInserted){
-       if (recordInserted){
+      if (recordInserted){
         console.log ("record inserted ");
-       }else {
+      }else {
         console.log ("record updated");
-       }
-       res.json(recordInserted);
+      }
+      res.json(recordInserted);
     }).catch(function(err){
       console.log (err);
       // show some kind of error
       res.json(err);
     });
-   
   });
-
-  
 
   // Delete an example by id
   app.delete("/api/examples/:id", function(req, res) {
