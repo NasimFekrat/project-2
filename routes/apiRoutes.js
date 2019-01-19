@@ -12,7 +12,7 @@ module.exports = function(app) {
   //Get all recommendations
   app.get("/api/reccomendations", function(req,res){
     db.Reccomendation.findAll({}).then(function(reccomendations){
-      res.json(reccomendations)
+      res.json(reccomendations);
     });
   });
 
@@ -27,13 +27,13 @@ module.exports = function(app) {
       res.json(citySearch);
     }).catch(function(err){
       console.log(err);
-    })
+    });
   });
 
   //Get user data
   app.get("/api/user", function(req, res) {
     db.User.findAll({
-       where: {id : id}//add req.params 
+      where: {id : id}//add req.params
     }).then(function(user) {
       res.json(user);
     }).catch(function(err){
@@ -42,7 +42,7 @@ module.exports = function(app) {
   });
 
   // Create User/profile and return userId
-  app.post("api/users",function(req,res){  
+  app.post("api/users",function(req,res){
     db.User.create({
       email:email,//add req.params
       name:name //add req.params
@@ -55,9 +55,8 @@ module.exports = function(app) {
 
   // Add to user Itinerary
   app.post("api/itinerary/:id",function(req,res){
-    db.Itinerary.crea
-  })
- 
+    res.end();
+  });
 
   // Route for upsert itinerary
   app.get("/api/addItinerary", function(req, res) {
@@ -65,25 +64,22 @@ module.exports = function(app) {
     let recId = 13;
     let status = true;
     db.Itinerary.upsert({
-        userId: userId,
-        recId: recId,
-        status: status,
+      userId: userId,
+      recId: recId,
+      status: status,
     }).then(function(recordInserted){
-       if (recordInserted){
+      if (recordInserted){
         console.log ("record inserted ");
-       }else {
+      }else {
         console.log ("record updated");
-       }
-       res.json(recordInserted);
+      }
+      res.json(recordInserted);
     }).catch(function(err){
       console.log (err);
       // show some kind of error
       res.json(err);
     });
-   
   });
-
-  
 
   // Delete an example by id
   app.delete("/api/examples/:id", function(req, res) {
