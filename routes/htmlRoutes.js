@@ -8,13 +8,14 @@ module.exports = function(app) {
   });
 
   //Load User's Profile
-  app.get("/itinerary/:name/",function(res,req){
-
+  app.get("/itinerary/:name/",function(req,res){
+    db.Itinerary();
+    res.end();
   });
 
   // Load Destinations
   app.get("/:city",function(req,res){
-    req.p;
+    res.end();
   });
 
 
@@ -23,3 +24,4 @@ module.exports = function(app) {
     res.render("404");
   });
 };
+
