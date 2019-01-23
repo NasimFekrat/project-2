@@ -1,43 +1,158 @@
-<div class="container">
-            <div class="buttons">
-                <!--BUtton go back to cathegories-->
-                <button type="submit" class="btn btn-default mt-1" id="cathegories">Cathegories</button>
-                <!--Add a button to go back to home page-->
-                <button type="submit" class="btn btn-default mt-1" id="home-button">Home</button><br><br>
+
+<!-- ======= Header Part Start ======= -->
+<header>
+  <div class="container fixed-top">
+    <nav class="navbar navbar-dark bg-dark mt-4 rounded">
+      <a class="navbar-brand text-danger" href="#top">
+        <img src="/img/favicon.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        Discover Canada
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#top">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item d-none active">
+            <a class="nav-link" href="#top">Profile <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Sign Up
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">
+                <form class="form my-2 my-lg-0">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                      placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your
+                      email with anyone else.</small>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                  </div>
+                  <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                  </div>
+                  <button type="submit" class="btn btn-dark">Submit</button>
+                </form>
+              </a>
             </div>
-            <div class="travel-list">
-                <!--Set a background picture-->
-                <h2 class="my-list"><bold>Your Destination list</bold></h2><br>
-                <h3 class="my-list">{{User full name}}</h3><br><br>
-                        
-            
-                <!--Name of User-->
-                        
-                <!--List of travel destinations. QUESTION! Specific choises will be added to specific cities ?-->
-                <ul class="list-group" class="cities">
-                    <li class="list-group-item" class="list-item" class="inner-city">{{City}}
-                        <ul class="list-group" class="destinations">
-                            <li class="list-group-item" class="list-item" class="inner-destination">{{destination}}
-                                <ul class="list-group" class="recommendations">
-                                    <li class="list-group-item" class="list-item" class="inner-destination">{{Recommendation}}</li>
-                                </ul>
-                            </li>
-                            <li class="list-group-item" class="list-item" class="inner-destination">{{destination}}
-                                <ul class="list-group" class="recommendations">
-                                    <li class="list-group-item" class="list-item" class="inner-destination">{{Recommendation}}</li>
-                                </ul>
-                            </li>
-                        </ul> 
-                    </li>            
-                </ul><br>
-                        
-                
-                        
-                <!--Add a button to save changes DONE!-->
-                <button type="submit" class="btn btn-default mt-1" id="save-changes">Save Changes</button>
-            
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Sign In
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">
+                <form class="form my-2 my-lg-0">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                      placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your
+                      email with anyone else.</small>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                  </div>
+                  <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                  </div>
+                  <button type="submit" class="btn btn-dark">Submit</button>
+                </form>
+              </a>
             </div>
-        </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- ======= Header Part End ======= -->
+<!-- ======= slider part start ======= -->
+<section id="top">
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <a href='https://www.freepik.com/free-photo/winter-in-canada_945578.htm'><img class="d-block w-100" src="/img/1.png"
+            alt="Designed by Kstudio"></a>
+      </div>
+      <div class="carousel-item">
+        <a href="https://www.freepik.com/free-photo/beautiful-red-and-green-maple-leaf-on-tree_3707166.htm"><img class="d-block w-100"
+            src="/img/2.png" alt="Designed by Lifeforstock"></a>
+      </div>
+      <div class="carousel-item">
+        <a href="https://www.freepik.com/free-photo/a-person-holding-magnifying-glass-over-map_2518273.htm"><img class="d-block w-100"
+            src="/img/3.png" alt="Designed by Freepik"></a>
+      </div>
+    </div>
+  </div>
+  <form class="form-row align-items-center my-5">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4 pl-auto my-1">
+      <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+        <option selected>Choose a city</option>
+       
+      </select>
+    </div>
+    <div class="col-sm-4 ml-0 my-1">
+      <button type="submit" class="btn btn-dark text-danger">Find</button>
+    </div>
+  </form>
+</section>
+<!-- ======= slider part end ======= -->
+<div id="home">
+  <div class="container">
+    <div class="row">
+      <div class="col-8 offset-2">
+        <h1>{{msg}}</h1>
+        <h2>This is our Home Page!</h2>
+        <form class="clearfix mb-4" action="POST">
+          <div class="form-group">
+            <label for="example-text">Example Text</label>
+            <input type="text" id="example-text" class="form-control" aria-describedby="example-text" placeholder="Enter Example Text">
+          </div>
+          <div class="form-group">
+            <label for="example-description">Example Description</label>
+            <textarea class="form-control" id="example-description" aria-describedby="example-description" placeholder="Enter Example Description"></textarea>
+          </div>
+          <button id="submit" class="btn btn-primary float-right">Submit</button>
+        </form>
+        <h3>Examples:</h3>
+        <ul id="example-list" class="list-group">
+          {{#each examples}}
+          <li data-id="{{this.id}}" class="list-group-item">
+            <a href="example/{{this.id}}">{{this.text}}</a>
+            <button class="btn btn-danger float-right delete">ｘ</button>
+          </li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ======= Footer Part Start ======= -->
+<div class="push"></div>
+<footer class="page-footer font-small pt-4 footer">
+  <!-- Copyright -->
+  <div class="footer-copyright text-center bg-dark text-danger m-0 p-4">CopyRight©</div>
+  <!-- Copyright -->
+</footer>
+<!-- ======= Footer Part End ======= -->
+
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="/js/index.js"></script>

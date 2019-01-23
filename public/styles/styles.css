@@ -2,6 +2,10 @@
   line-height: 2.5;
 }
 
+.footer , .push{
+  height: 30px;
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -82,4 +86,5 @@ button:hover {
 
 .buttons {
   position: sticky;
+
 }
