@@ -1,33 +1,43 @@
-<div id="home">
-  <div class="container">
-    <div class="row">
-      <div class="col-8 offset-2">
-        <h1>{{msg}}</h1>
-        <h2>This is our Home Page!</h2>
-        <form class="clearfix mb-4" action="POST">
-          <div class="form-group">
-            <label for="example-text">Example Text</label>
-            <input type="text" id="example-text" class="form-control" aria-describedby="example-text" placeholder="Enter Example Text">
-          </div>
-          <div class="form-group">
-            <label for="example-description">Example Description</label>
-            <textarea class="form-control" id="example-description" aria-describedby="example-description" placeholder="Enter Example Description"></textarea>
-          </div>
-          <button id="submit" class="btn btn-primary float-right">Submit</button>
-        </form>
-        <h3>Examples:</h3>
-        <ul id="example-list" class="list-group">
-          {{#each examples}}
-          <li data-id="{{this.id}}" class="list-group-item">
-            <a href="example/{{this.id}}">{{this.text}}</a>
-            <button class="btn btn-danger float-right delete">ｘ</button>
-          </li>
-          {{/each}}
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
+<div class="container">
+            <div class="buttons">
+                <!--BUtton go back to cathegories-->
+                <button type="submit" class="btn btn-default mt-1" id="cathegories">Cathegories</button>
+                <!--Add a button to go back to home page-->
+                <button type="submit" class="btn btn-default mt-1" id="home-button">Home</button><br><br>
+            </div>
+            <div class="travel-list">
+                <!--Set a background picture-->
+                <h2 class="my-list"><bold>Your Destination list</bold></h2><br>
+                <h3 class="my-list">{{User full name}}</h3><br><br>
+                        
+            
+                <!--Name of User-->
+                        
+                <!--List of travel destinations. QUESTION! Specific choises will be added to specific cities ?-->
+                <ul class="list-group" class="cities">
+                    <li class="list-group-item" class="list-item" class="inner-city">{{City}}
+                        <ul class="list-group" class="destinations">
+                            <li class="list-group-item" class="list-item" class="inner-destination">{{destination}}
+                                <ul class="list-group" class="recommendations">
+                                    <li class="list-group-item" class="list-item" class="inner-destination">{{Recommendation}}</li>
+                                </ul>
+                            </li>
+                            <li class="list-group-item" class="list-item" class="inner-destination">{{destination}}
+                                <ul class="list-group" class="recommendations">
+                                    <li class="list-group-item" class="list-item" class="inner-destination">{{Recommendation}}</li>
+                                </ul>
+                            </li>
+                        </ul> 
+                    </li>            
+                </ul><br>
+                        
+                
+                        
+                <!--Add a button to save changes DONE!-->
+                <button type="submit" class="btn btn-default mt-1" id="save-changes">Save Changes</button>
+            
+            </div>
+        </div>
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="/js/index.js"></script>
