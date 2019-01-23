@@ -39,7 +39,7 @@ use travelDB;
 
     -- Food
     INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
-    VALUES ("food", "toronto", "canoe", "some event happening in Toronto", CURDATE(), CURDATE());
+    VALUES ("food", "toronto", "canoe", "A stylish, swanky space on the 54th floor, with inventive Canadian cuisine & exceptional views.", CURDATE(), CURDATE());
 
     INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
     VALUES ("food", "toronto", "richmond station", "Co-owned by a 'Top Chef Canada' winner, this bustling spot offers a daily menu of seasonal cuisine.", CURDATE(), CURDATE());
@@ -55,19 +55,19 @@ use travelDB;
 
     -- activities
     INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
-    VALUES ("activites", "toronto", "some event happening in Toronto", CURDATE(), CURDATE());
+    VALUES ("activites]", "toronto","lakeridge resort", "Lakeridge Resort is also in the Oak Ridges Moraine in Uxbridge, Ontario. It has more than 20 runs spread over 70 acres, with black diamond trails for experts as well as beginner hills.", CURDATE(), CURDATE());
 
     INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
-    VALUES ("activities", "toronto", "some event happening in Toronto", CURDATE(), CURDATE());
+    VALUES ("activities", "toronto", "the second city", "The Second City is renown as the world's premier comedy theatre, with critically-acclaimed live improv and sketch comedy shows on stage every night. ", CURDATE(), CURDATE());
 
     INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
-    VALUES ("activities", "toronto", "some event happening in Toronto", CURDATE(), CURDATE());
+    VALUES ("activities", "toronto","Toronto Heli Tours", "A 15-kilometre helicopter ride reveals panoramic glimpses of Toronto from 2,000 feet above sea level", CURDATE(), CURDATE());
 
     INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
-    VALUES ("activities", "toronto", "some event happening in Toronto", CURDATE(), CURDATE());
+    VALUES ("activities", "toronto","canada's wonderland" "Canada's Wonderland is a 134-hectare theme park located in Vaughan, Ontario, a suburb approximately 40 kilometres north of Downtown Toronto. Opened in 1981 by the Taft Broadcasting Company and The Great-West Life Assurance Company as the first major theme park in Canada, it remains the country's largest.", CURDATE(), CURDATE());
     
     INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
-    VALUES ("activities", "toronto", "some event happening in Toronto", CURDATE(), CURDATE());
+    VALUES ("activities", "toronto","niagara falls hornblower cruise", "Hornblower Niagara Cruises is the official boat tour operator for Niagara Falls, Canada. The only way to experience Canada's most iconic experience!", CURDATE(), CURDATE());
 -- 
 INSERT INTO Users (email, name, createdAt, updatedAt)
 VALUES ("joseph.lui2000@gmail.com", "Joseph", CURDATE(), CURDATE());
