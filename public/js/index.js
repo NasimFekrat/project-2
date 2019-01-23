@@ -4,6 +4,17 @@ var $exampleDescription = $("#example-description");
 var $submitBtn = $("#submit");
 var $exampleList = $("#example-list");
 
+$(document).ready(function(){
+  $.get("/api/destinations", function(data) {
+    // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+
+    data.forEach(item => {
+      $("#inlineFormCustomSelect").append($("<option>", {value: item.city, text: item.displayName}));
+    });
+  });
+});
+
+
 // The API object contains methods for each kind of request we"ll make
 var API = {
   saveExample: function(example) {
@@ -18,7 +29,7 @@ var API = {
   },
   getExamples: function() {
     return $.ajax({
-      url: "api/examples",
+      url: "api/destinations",
       type: "GET"
     });
   },
