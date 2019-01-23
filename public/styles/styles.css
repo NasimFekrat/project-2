@@ -1,6 +1,90 @@
 .list-group-item {
   line-height: 2.5;
 }
+
 .footer , .push{
   height: 30px;
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: url("images/pic6.png") #B0DFE5 no-repeat top center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+h2 {
+  color: white;
+}
+
+h3 {
+  color: white;
+}
+.travel-list {
+
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 150px;
+  margin-right: 100px;
+  position: relative;
+  width: 800px;
+  padding: 60px;
+  margin-bottom: 50px;
+  margin-left: 150px;
+  margin-right: 100px;
+  border: 2px solid white;
+  background: rgba (0,0,1,0.1);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.list-item {
+  border: 1px solid white;
+}
+
+button {
+  background-color: transparent;
+  color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+li:hover {
+  color: white; 
+  background-color: #44BEAC;
+  border: white;
+}
+
+li {
+  background-color: transparent;
+  border: 2px solid white;
+}
+
+button:hover {
+  color: black;
+  background-color: #19B360;
+}
+#home-button {
+  float: right;
+}
+
+#save-changes {
+  float: right;
+}
+
+#cathegories {
+  float: right;
+}
+
+.buttons {
+  position: sticky;
+
 }
