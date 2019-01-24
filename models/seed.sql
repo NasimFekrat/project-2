@@ -83,7 +83,7 @@ VALUES ("Halifax", "Halifax", "http://s1.1zoom.net/big0/193/Brazil_Lighthouses_S
     INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
     VALUES ("Food", "Toronto", "Alo", "French tasting menu served in stylish, serene surrounds atop a Victorian building.", CURDATE(), CURDATE());
 
-    -- activities
+    -- Activities
     INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
     VALUES ("Activites]", "Toronto","Lakeridge Resort", "Lakeridge Resort is also in the Oak Ridges Moraine in Uxbridge, Ontario. It has more than 20 runs spread over 70 acres, with black diamond trails for experts as well as beginner hills.", CURDATE(), CURDATE());
 
@@ -101,68 +101,84 @@ VALUES ("Halifax", "Halifax", "http://s1.1zoom.net/big0/193/Brazil_Lighthouses_S
 -- Vancouver Recommendations
     -- Events
     INSERT INTO Recommendations (category, city, name, startDate, endDate, description, createdAt, updatedAt)
-    VALUES ("Events", "Vancouver", "_name_","2019-08-16", "2019-09-02",
-    "add-description", CURDATE(), CURDATE());
+    VALUES ("Events", "Vancouver", "Bard on the Beach Shakespeare Festival","2019-06-05", "2019-09-21",
+    "Bard on the Beach Shakespeare Festival’s 30th Anniversary Season runs from June 5 to Sept 21 , 2019 in modern theatre tents in a spectacular waterfront setting in Vancouver’s Vanier Park .", CURDATE(), CURDATE());
 
     INSERT INTO Recommendations (category, city, name, startDate, endDate, description, createdAt, updatedAt)
-    VALUES ("Events", "Vancouver", "_name_","2019-08-16", "2019-09-02",
-    "add-description", CURDATE(), CURDATE());
+    VALUES ("Events", "Vancouver", "Fan Expo Vancouver","2019-10-12", "2019-10-14",
+    "FAN EXPO Vancouver™ is a pop culture convention for fans of comics, sci-fi, horror, anime, cosplay, authors and gaming. The three-day extravaganza is packed with exciting family-friendly activities, programs, attractions and celebrities.", CURDATE(), CURDATE());
 
     INSERT INTO Recommendations (category, city, name, startDate, endDate, description, createdAt, updatedAt)
-    VALUES ("Events", "Vancouver", "_name_","2019-08-16", "2019-09-02",
-    "add-description", CURDATE(), CURDATE());
+    VALUES ("Events", "Vancouver", "JFL NorthWest","2019-02-14", "2019-02-23",
+    "JFL NorthWest will be bringing you your stand-up favourites, and championing the up-and-comers you didn’t even know you loved. Plus improv, sketch, podcasts and all-ages events!", CURDATE(), CURDATE());
 
     INSERT INTO Recommendations (category, city, name, startDate, endDate, description, createdAt, updatedAt)
-    VALUES ("Events", "Vancouver", "_name_","2019-08-16", "2019-09-02",
-    "add-description", CURDATE(), CURDATE());
+    VALUES ("Events", "Vancouver", "Vancouver Christmas Market","2019-11-21", "2019-12-24",
+    "The city's signature yuletide celebration amplifies and expands its festive offerings with more than 80 huts stuffed with sweets, treats, and treasures.", CURDATE(), CURDATE());
 
     INSERT INTO Recommendations (category, city, name, startDate, endDate, description, createdAt, updatedAt)
-    VALUES ("Events", "Vancouver", "_name_","2019-08-16", "2019-09-02",
-    "add-description", CURDATE(), CURDATE());
+    VALUES ("Events", "Vancouver", "Vancouver Craft Beer Week","2019-05-31", "2019-06-09",
+    "Vancouver Craft Beer Week started in 2010 at a small venue in Vancouver hosting about 100 beer aficionados and 15 breweries. Over the past 9 years, it has evolved from Canada’s first-ever craft beer week into a cultural engine that showcases music, food, art, and craft beer at events across the city, from the last weekend of May to the first weekend of June every year.", CURDATE(), CURDATE());
 
     -- Attractions
     INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
-    VALUES ("Attractions", "Vancouver", "_name_",
-    "add-description", CURDATE(), CURDATE());
+    VALUES ("Attractions", "Vancouver", "Vancouver Lookout",
+    "Come see the spectacular 360-degree view of cosmopolitan Vancouver, the majestic North Shore Mountains and perhaps even Vancouver Island.", CURDATE(), CURDATE());
 
     INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
-    VALUES ("Attractions", "Vancouver", "_name_",
-    "add-description", CURDATE(), CURDATE());
+    VALUES ("Attractions", "Vancouver", "UBC Botanical Garden",
+    "Immerse yourself in the world of wild-collected plants at UBC Botanical Garden! Garden highlights include internationally recognized collections of magnolias and maples. Stroll through our impressive Asian garden with over 400 kinds of rhododendrons, travel the continents in our alpine garden, and explore our native rainforest garden", CURDATE(), CURDATE());
 
     INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
-    VALUES ("Attractions", "Vancouver", "_name_",
-    "add-description", CURDATE(), CURDATE());
+    VALUES ("Attractions", "Vancouver", "Prince of Whales Whale Watching",
+    "The BC coast has much to offer, and we feel lucky to deliver so much of it to you! We have multiple whale watching trip options, and we look forward to tailoring you with the ultimate West Coast experience.", CURDATE(), CURDATE());
 
     INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
-    VALUES ("Attractions", "Vancouver", "_name_",
-    "add-description", CURDATE(), CURDATE());
+    VALUES ("Attractions", "Vancouver", "Vancouver Art Gallery",
+    "This highly-acclaimed collection of national and international contemporary art is worth spending at least an afternoon exploring.", CURDATE(), CURDATE());
 
     INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
-    VALUES ("Attractions", "Vancouver", "_name_",
-    "add-description", CURDATE(), CURDATE());
+    VALUES ("Attractions", "Vancouver", "Vancouver Aquarium",
+    "Located within Stanley Park, Vancouver Aquarium is a popular local attraction. As a non-profit organisation, the aquarium is “dedicated to effecting the conservation of aquatic life through education, research and direct action”.", CURDATE(), CURDATE());
 
     -- Food
     INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
-    VALUES ("Food", "Vancouver", "_name_",
-    "add-description", CURDATE(), CURDATE());
+    VALUES ("Food", "Vancouver", "Blue Water Cafe",
+    "Destination in a heritage warehouse space offering sustainable seafood with innovative touches.", CURDATE(), CURDATE());
 
     INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
-    VALUES ("Food", "Vancouver", "_name_",
-    "add-description", CURDATE(), CURDATE());
+    VALUES ("Food", "Vancouver", "The Oakwood Canadian Bistro",
+    "Canadian cuisine using housemade & local ingredients in a warm, wood-paneled room with a fireplace.", CURDATE(), CURDATE());
 
     INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
-    VALUES ("Food", "Vancouver", "_name_",
-    "add-description", CURDATE(), CURDATE());
+    VALUES ("Food", "Vancouver", "Chambar Restaurant",
+    "Chic exposed-brick space serving creative Belgian cuisine & sustainable seafood, plus beer & wine.", CURDATE(), CURDATE());
 
     INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
-    VALUES ("Food", "Vancouver", "_name_",
-    "add-description", CURDATE(), CURDATE());
+    VALUES ("Food", "Vancouver", "Miku Vancouver",
+    "Sushi & sustainable seafood are served in a sophisticated setting with a patio & water views.", CURDATE(), CURDATE());
 
     INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
-    VALUES ("Food", "Vancouver", "_name_",
-    "add-description", CURDATE(), CURDATE());
+    VALUES ("Food", "Vancouver", "Joe Fortes Seafood & Chop House",
+    "Vibrant, booth-lined dining room for seafood & steak, with a popular oyster bar & rooftop patio.", CURDATE(), CURDATE());
 
-    -- Activities  
+    -- Activities 
+    INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
+    VALUES ("Activities", "Vancouver", "Stanley Park",
+    "One of the biggest urban parks in North America, Stanley Park is nearly entirely surrounded by water. There’s plenty to see in and around the park, like its beaches, lagoon and lake, with stunning views from every angle.", CURDATE(), CURDATE()); 
+
+    INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
+    VALUES ("Activities", "Vancouver", "Capilano Suspension Bridge",
+    "One of Vancouver's most iconic sites Capilano Suspension Bridge Park, is more exciting than ever! The cliffwalks stunning walkway, made partly of glass, hugs the granite cliffside as it offers a panoramic view of the rainforest and canyon far below.", CURDATE(), CURDATE()); 
+
+    INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
+    VALUES ("Activities", "Vancouver", "Sea to Sky Gondola",
+    "Ride the famous Sea to Sky Gondola in Squamish, take in views of Howe Sound, the coastal rainforest and mountains at the top, explore Whistler Village, stop at Shannon Falls and enjoy the diverse and scenic landscape along the Sea to Sky Highway.", CURDATE(), CURDATE()); 
+
+    INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
+    VALUES ("Activities", "Vancouver", "Whistler Blackcomb",
+    "Whistler Blackcomb, one of the largest ski resorts in North America. Besides skiing and snowboarding, the area offers snowshoeing, tobogganing and ski jumping at the Olympic Park, a venue for the 2010 Vancouver Winter Olympics.", CURDATE(), CURDATE()); 
+
 
 -- Users 
 INSERT INTO Users (email, name, createdAt, updatedAt)
