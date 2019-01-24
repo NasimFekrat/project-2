@@ -1,24 +1,29 @@
 use travelDB;
+
+INSERT INTO Destinations (city, displayName, heroImage, featureImage, createdAt, updatedAt)
+VALUES ("toronto", "Toronto", "http://www.google.ca/toronto.jpg", "http://www.google.ca/toronto2.jpg", CURDATE(), CURDATE());
+
+
 -- TORONTO RECOMMENDATIONS
     -- Events
-    INSERT INTO Recommendations (category, city, name, startDate, endDate description, createdAt, updatedAt)
-    VALUES ("event", "toronto", "cne",2019-08-16, 2019-09-02,
+    INSERT INTO Recommendations (category, city, name, startDate, endDate, description, createdAt, updatedAt)
+    VALUES ("event", "toronto", "cne","2019-08-16", "2019-09-02",
     "This annual end-of-summer tradition takes the fall fair to new heights. Jammed with midway rides, live music, dog and pony shows and over-the-top culinary concoctions, The Ex is fun for everyone.", CURDATE(), CURDATE());
 
-    INSERT INTO Recommendations (category, city, name, startDate, endDate description, createdAt, updatedAt)
-    VALUES ("event", "toronto", "td jazz festival",2019-06-21, 2019-06-30, 
+    INSERT INTO Recommendations (category, city, name, startDate, endDate, description, createdAt, updatedAt)
+    VALUES ("event", "toronto", "td jazz festival","2019-06-21","2019-06-30", 
     "The Toronto Jazz Festival is a jazz event in Toronto which takes place for 10 days in late June through early July. Unlike the Beaches International Jazz Festival, most of the events are indoors and located throughout the downtown core.", CURDATE(), CURDATE());
 
-    INSERT INTO Recommendations (category, city, name, startDate, endDate  description, createdAt, updatedAt)
-    VALUES ("event", "toronto", "christmas markets", 2019-11-15, 2019-12-23, 
+    INSERT INTO Recommendations (category, city, name, startDate, endDate,  description, createdAt, updatedAt)
+    VALUES ("event", "toronto", "christmas markets", "2019-11-15", "2019-12-23", 
     "Enjoy the tradition, heritage and charm of a European Christmas Market, right in the heart of Toronto.", CURDATE(), CURDATE());
 
-    INSERT INTO Recommendations (category, city, name, startDate, endDate description, createdAt, updatedAt)
-    VALUES ("event", "toronto", "indy 500", 2019-07-12, 2019-07-14, 
+    INSERT INTO Recommendations (category, city, name, startDate, endDate, description, createdAt, updatedAt)
+    VALUES ("event", "toronto", "indy 500", "2019-07-12", "2019-07-14", 
     "some event happening in Toronto", CURDATE(), CURDATE());
 
-    INSERT INTO Recommendations (category, city, name, startDate, endDate description, createdAt, updatedAt)
-    VALUES ("event", "toronto", "tiff",2019-09-05, 2019-09-15, 
+    INSERT INTO Recommendations (category, city, name, startDate, endDate, description, createdAt, updatedAt)
+    VALUES ("event", "toronto", "tiff","2019-09-05", "2019-09-15", 
     "some event happening in Toronto", CURDATE(), CURDATE());
 
     -- Attractions
@@ -64,16 +69,13 @@ use travelDB;
     VALUES ("activities", "toronto","Toronto Heli Tours", "A 15-kilometre helicopter ride reveals panoramic glimpses of Toronto from 2,000 feet above sea level", CURDATE(), CURDATE());
 
     INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
-    VALUES ("activities", "toronto","canada's wonderland" "Canada's Wonderland is a 134-hectare theme park located in Vaughan, Ontario, a suburb approximately 40 kilometres north of Downtown Toronto. Opened in 1981 by the Taft Broadcasting Company and The Great-West Life Assurance Company as the first major theme park in Canada, it remains the country's largest.", CURDATE(), CURDATE());
+    VALUES ("activities", "toronto","canada's wonderland","Canada's Wonderland is a 134-hectare theme park located in Vaughan, Ontario, a suburb approximately 40 kilometres north of Downtown Toronto. Opened in 1981 by the Taft Broadcasting Company and The Great-West Life Assurance Company as the first major theme park in Canada, it remains the country's largest.", CURDATE(), CURDATE());
     
     INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
     VALUES ("activities", "toronto","niagara falls hornblower cruise", "Hornblower Niagara Cruises is the official boat tour operator for Niagara Falls, Canada. The only way to experience Canada's most iconic experience!", CURDATE(), CURDATE());
 -- 
 INSERT INTO Users (email, name, createdAt, updatedAt)
 VALUES ("joseph.lui2000@gmail.com", "Joseph", CURDATE(), CURDATE());
-
-INSERT INTO Destinations (city, displayName, heroImage, featureImage, createdAt, updatedAt)
-VALUES ("toronto", "Toronto", "http://www.google.ca/toronto.jpg", "http://www.google.ca/toronto2.jpg", CURDATE(), CURDATE());
 
 INSERT INTO Itineraries (userId, recId, createdAt, updatedAt)
 VALUES (1, 1, CURDATE(), CURDATE());

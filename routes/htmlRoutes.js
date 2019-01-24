@@ -1,18 +1,17 @@
 var db = require("../models");
-var path = require("path");
+// var path = require("path");
 
 module.exports = function(app) {
 
   // index route
   app.get("/", function(req, res){
-    res.sendFile(path.join(__dirname,""));
-
+    // res.sendFile(path.join(__dirname,""));
+    res.render("index", {});
+  });
 
   app.get("/profile/:id", function(req, res) {
-    var id = req.params.id;
-    app.get("/api/user/" + id, function(req, res) {
-
-    } 
+    // var id = req.params.id;
+    res.end();
 
   });
 
@@ -32,5 +31,4 @@ module.exports = function(app) {
   app.get("*", function(req, res) {
     res.render("404");
   });
-};
-
+}
