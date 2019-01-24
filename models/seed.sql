@@ -69,7 +69,9 @@ VALUES ("Toronto", "Toronto", "https://c1.staticflickr.com/8/7220/6971637782_9d3
     VALUES ("activities", "Toronto","Toronto Heli Tours", "A 15-kilometre helicopter ride reveals panoramic glimpses of Toronto from 2,000 feet above sea level", CURDATE(), CURDATE());
 
     INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
+
     VALUES ("activities", "Toronto","Canada's Wonderland","Canada's Wonderland is a 134-hectare theme park located in Vaughan, Ontario, a suburb approximately 40 kilometres north of Downtown Toronto. Opened in 1981 by the Taft Broadcasting Company and The Great-West Life Assurance Company as the first major theme park in Canada, it remains the country's largest.", CURDATE(), CURDATE());
+
     
     INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
     VALUES ("activities", "Toronto","Niagara Falls Hornblower Cruise", "Hornblower Niagara Cruises is the official boat tour operator for Niagara Falls, Canada. The only way to experience Canada's most iconic experience!", CURDATE(), CURDATE());
