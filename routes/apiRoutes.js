@@ -34,10 +34,10 @@ module.exports = function(app) {
   });
 
   //Get user data
-  app.get("/api/user/:id", function(req, res) {
-    var id = req.params.id;
+  app.get("/api/user/:email", function(req, res) {
+    var email = req.params.email;
     db.User.findAll({
-      where: {id : id}
+      where: {email : email}
     }).then(function(user) {
       res.json(user);
     }).catch(function(err){
