@@ -6,13 +6,14 @@ module.exports = function(app) {
   // index route
   app.get("/", function(req, res){
     res.sendFile(path.join(__dirname,""));
-
+  });
 
   app.get("/profile/:id", function(req, res) {
+    res.end();
     var id = req.params.id;
     app.get("/api/user/" + id, function(req, res) {
-
-    } 
+      res.end();
+    });
 
   });
 
@@ -33,4 +34,3 @@ module.exports = function(app) {
     res.render("404");
   });
 };
-
