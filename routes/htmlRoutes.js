@@ -4,9 +4,13 @@ var db = require("../models");
 module.exports = function(app) {
 
   // index route
-  app.get("/", function(req, res){
+  app.get("/index", function(req, res){
     // res.sendFile(path.join(__dirname,""));
     res.render("index", {});
+  });
+
+  app.get("/", function(req, res){
+    res.render("login", {});
   });
 
   app.get("/profile/:id", function(req, res) {
