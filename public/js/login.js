@@ -45,7 +45,7 @@ $(document).ready(function(){
         $("#existingUserEmail").val("");
         $("#newUserEmail").val("");
       }else {
-        localStorage.clear();
+        localStorage.removeItem("user");
         localStorage.setItem("user", JSON.stringify(userProfile));
         window.location.replace("/index");
       }
@@ -77,7 +77,7 @@ $(document).ready(function(){
         $("#existingUserEmail").val("");
         $("#newUserEmail").val("");
       }else {
-        localStorage.clear();
+        localStorage.removeItem("user");
         localStorage.setItem("user", JSON.stringify(userProfile));
         window.location.replace("/index");
       }

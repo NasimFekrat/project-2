@@ -1,4 +1,5 @@
 var db = require("../models");
+var _ = require("lodash");
 
 module.exports = function(app) {
 
@@ -45,17 +46,20 @@ module.exports = function(app) {
     });
   });
 
-  //Get itinerary for user
-  app.get("/api/itinerary/:userId", function(req, res) {
+  //Get itinerary for an user for a city
+  app.get("/api/itinerary/:userId/:city", function(req, res) {
     var userId = req.params.userId;
+    var city = req.params.city;
     db.Itinerary.findAll({
-      where: {userId : userId},
+      where: {userId : userId, status: true},
       include: [
-        { model: db.Recommendation, required: true},
-        { model: db.User, required: true},
+        { model: db.Recommendation, required: true, where : {city: city}},
       ],
     }).then(function(resp) {
-      res.json(resp);
+      const savedArticles = _.map (resp, function(rec) {
+        return rec.Recommendation.id;
+      });
+      res.json({result: savedArticles});
     }).catch(function(err){
       console.log (err);
     });
