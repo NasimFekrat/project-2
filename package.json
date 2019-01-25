@@ -33,9 +33,12 @@
     "type": "git",
     "url": "git+https://github.com/NasimFekrat/project-2.git"
   },
-  "author": "",
+  "author": "arjun",
   "bugs": {
     "url": "https://github.com/NasimFekrat/project-2/issues"
   },
-  "homepage": "https://github.com/NasimFekrat/project-2#readme"
+  "homepage": "https://github.com/NasimFekrat/project-2#readme",
+  "keywords": [
+    "portfolio"
+  ]
 }
