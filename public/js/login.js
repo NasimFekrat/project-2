@@ -8,14 +8,17 @@ $(document).ready(function(){
 
 
   var API = {
-    registerUser: function() {
+    registerUser: function(email) {
+      var emailAddress = {
+        email: email
+      };
       return $.ajax({
         headers: {
           "Content-Type": "application/json"
         },
         type: "POST",
-        url: "/api/itinerary",
-        data: JSON.stringify(itinerary)
+        url: "/api/user",
+        data: JSON.stringify(emailAddress)
       });
     },
     retrieveUser: function(email) {
@@ -42,7 +45,7 @@ $(document).ready(function(){
         $("#existingUserEmail").val("");
         $("#newUserEmail").val("");
       }else {
-        localStorage.clear();
+        localStorage.removeItem("user");
         localStorage.setItem("user", JSON.stringify(userProfile));
         window.location.replace("/index");
       }
@@ -60,6 +63,25 @@ $(document).ready(function(){
 
   $("#registerButton").on("click", function(event){
     event.preventDefault();
+    let email = $("#newUserEmail").val();
+
+    if (!email){
+      $("#error").show();
+      $("#existingUserEmail").val("");
+      $("#newUserEmail").val("");
+      return;
+    }
+    API.registerUser(email).then(function(userProfile){
+      if (userProfile.length === 0){
+        $("#error").show();
+        $("#existingUserEmail").val("");
+        $("#newUserEmail").val("");
+      }else {
+        localStorage.removeItem("user");
+        localStorage.setItem("user", JSON.stringify(userProfile));
+        window.location.replace("/index");
+      }
+    });
   });
 
 });
