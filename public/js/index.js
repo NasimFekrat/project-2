@@ -31,12 +31,6 @@ var API = {
       url: "/api/recommendations/"+ city + "/" + cat,
       type: "GET"
     });
-  },
-  deleteExample: function(id) {
-    return $.ajax({
-      url: "api/examples/" + id,
-      type: "DELETE"
-    });
   }
 };
 
@@ -148,18 +142,21 @@ $(document).ready(function(){
   $(document.body).on("click", ".recList" ,function(){
     var id = $(this).attr("id");
     var user = JSON.parse(localStorage.getItem("user"));
+
     if (user === null){
       // ask user to sign in
       // alert ("user is null");
+      window.location.replace("/");
+
     } else {
       // continue on saving the preference
       // alert ("user is not null");
     }
-    user = 1;
+
     var status = $(this).is(":checked");
 
     var reqData = {
-      userId: user,
+      userId: user[0].id,
       recId: id,
       status: status
     };

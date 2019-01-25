@@ -62,14 +62,19 @@ module.exports = function(app) {
   });
 
   // Create User/profile and return userId
-  app.post("api/users",function(req,res){
+  app.post("/api/user",function(req,res){
     db.User.create({
-      email:email,//add req.params
-      name:name //add req.params
+      email: req.body.email,//add req.params
+      //name:name //add req.params
     }).then(function(createUser){
-      res.json(createUser);
-    }).catch(function(err){
-      console.log(err);
+      return res.json(createUser);
+    }).catch(function(){
+      // try retrieving the user,
+      db.User.findAll({
+        where: {email: req.body.email}
+      }).then(function(resp) {
+        return res.json(resp);
+      });
     });
   });
 
