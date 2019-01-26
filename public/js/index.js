@@ -175,7 +175,12 @@ $(document).ready(function(){
   $(".category").on("click", function(){
     cat = $(this).attr("data-val");
     $("#RecommendationList").empty();
-    getRec();
+    API.getRecommendation(selectedCity, cat).then(function(result){
+      result.forEach((data) => {
+        $("#RecommendationList").show();
+        $("#RecommendationList").append("<input type=\"checkbox\" class=\"recList\" id=\'"+data.id+"' name='"+data.name+"' value='"+data.id+"'>"+data.name+"<br/>");
+      });
+    });
   });
 
   // Sets the event listener for saving recommendations
