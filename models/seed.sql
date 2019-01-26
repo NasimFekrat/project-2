@@ -59,45 +59,57 @@ VALUES ("Halifax", "Halifax", "http://s1.1zoom.net/big0/193/Brazil_Lighthouses_S
     VALUES ("Attractions", "Toronto", "Art Gallery of Ontario", "The Art Gallery of Ontario is an art museum in Toronto, Ontario, Canada. Its collection includes close to 95,000 works spanning the first century to the present day.", CURDATE(), CURDATE());
 
     INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
-    VALUES ("Attractions", "Toronto","Ripley's Aquarium", "Ripley's Aquarium of Canada is a public aquarium in Toronto, Ontario, Canada. The aquarium is one of three aquariums owned and operated by Ripley Entertainment.", CURDATE(), CURDATE());
+    VALUES ("Attractions", "Toronto","Ripley's Aquarium", 
+    "Ripley's Aquarium of Canada is a public aquarium in Toronto, Ontario, Canada. The aquarium is one of three aquariums owned and operated by Ripley Entertainment.", CURDATE(), CURDATE());
 
     INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
-    VALUES ("Attractions", "Toronto","CN Tower", "The CN Tower is a 553.3 m-high concrete communications and observation tower located in Downtown Toronto, Ontario, Canada.", CURDATE(), CURDATE());
+    VALUES ("Attractions", "Toronto","CN Tower", 
+    "The CN Tower is a 553.3 m-high concrete communications and observation tower located in Downtown Toronto, Ontario, Canada.", CURDATE(), CURDATE());
     
     INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
-    VALUES ("Attractions", "Toronto","Toronto Zoo", "Encompassing 287 hectares (710 acres), the Toronto Zoo is the largest zoo in Canada. It is divided into seven zoogeographic regions: Indo-Malaya, Africa, Americas, Tundra Trek, Australasia, Eurasia, and the Canadian Domain.", CURDATE(), CURDATE());
+    VALUES ("Attractions", "Toronto","Toronto Zoo", 
+    "Encompassing 287 hectares (710 acres), the Toronto Zoo is the largest zoo in Canada. It is divided into seven zoogeographic regions: Indo-Malaya, Africa, Americas, Tundra Trek, Australasia, Eurasia, and the Canadian Domain.", CURDATE(), CURDATE());
 
     -- Food
     INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
-    VALUES ("Food", "Toronto", "Canoe", "A stylish, swanky space on the 54th floor, with inventive Canadian cuisine & exceptional views.", CURDATE(), CURDATE());
+    VALUES ("Food", "Toronto", "Canoe", 
+    "A stylish, swanky space on the 54th floor, with inventive Canadian cuisine & exceptional views.", CURDATE(), CURDATE());
 
     INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
-    VALUES ("Food", "Toronto", "Richmond Station", "Co-owned by a 'Top Chef Canada' winner, this bustling spot offers a daily menu of seasonal cuisine.", CURDATE(), CURDATE());
+    VALUES ("Food", "Toronto", "Richmond Station", 
+    "Co-owned by a 'Top Chef Canada' winner, this bustling spot offers a daily menu of seasonal cuisine.", CURDATE(), CURDATE());
 
     INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
-    VALUES ("Food", "Toronto","Seven Lives", "This Kensington hot spot is the place to go. They feature Baja-style tacos with their #1 seller being their Baja fish tacos! It's a casual spot to enjoy with friends or to take to go when you're in a rush.", CURDATE(), CURDATE());
+    VALUES ("Food", "Toronto","Seven Lives", 
+    "This Kensington hot spot is the place to go. They feature Baja-style tacos with their #1 seller being their Baja fish tacos! It's a casual spot to enjoy with friends or to take to go when you're in a rush.", CURDATE(), CURDATE());
 
     INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
-    VALUES ("Food", "Toronto","PAI", "Nuit & Jeff Regular's casual Northern Thai spot serving dishes like salted crab & papaya salad.", CURDATE(), CURDATE());
+    VALUES ("Food", "Toronto","PAI", 
+    "Nuit & Jeff Regular's casual Northern Thai spot serving dishes like salted crab & papaya salad.", CURDATE(), CURDATE());
     
     INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
-    VALUES ("Food", "Toronto", "Alo", "French tasting menu served in stylish, serene surrounds atop a Victorian building.", CURDATE(), CURDATE());
+    VALUES ("Food", "Toronto", "Alo", 
+    "French tasting menu served in stylish, serene surrounds atop a Victorian building.", CURDATE(), CURDATE());
 
     -- Activities
     INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
-    VALUES ("Activites]", "Toronto","Lakeridge Resort", "Lakeridge Resort is also in the Oak Ridges Moraine in Uxbridge, Ontario. It has more than 20 runs spread over 70 acres, with black diamond trails for experts as well as beginner hills.", CURDATE(), CURDATE());
+    VALUES ("Activites]", "Toronto","Lakeridge Resort", 
+    "Lakeridge Resort is also in the Oak Ridges Moraine in Uxbridge, Ontario. It has more than 20 runs spread over 70 acres, with black diamond trails for experts as well as beginner hills.", CURDATE(), CURDATE());
 
     INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
-    VALUES ("Activities", "Toronto", "The Second City", "The Second City is renown as the world's premier comedy theatre, with critically-acclaimed live improv and sketch comedy shows on stage every night. ", CURDATE(), CURDATE());
+    VALUES ("Activities", "Toronto", "The Second City", 
+    "The Second City is renown as the world's premier comedy theatre, with critically-acclaimed live improv and sketch comedy shows on stage every night. ", CURDATE(), CURDATE());
 
     INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
-    VALUES ("Activities", "Toronto","Toronto Heli Tours", "A 15-kilometre helicopter ride reveals panoramic glimpses of Toronto from 2,000 feet above sea level", CURDATE(), CURDATE());
+    VALUES ("Activities", "Toronto","Toronto Heli Tours", 
+    "A 15-kilometre helicopter ride reveals panoramic glimpses of Toronto from 2,000 feet above sea level", CURDATE(), CURDATE());
 
     INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
     VALUES ("Activities", "Toronto","Canada's Wonderland","Canada's Wonderland is a 134-hectare theme park located in Vaughan, Ontario, a suburb approximately 40 kilometres north of Downtown Toronto. It's the largest theme park in Canada.", CURDATE(), CURDATE());
     
     INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
-    VALUES ("Activities", "Toronto","Niagara Falls Hornblower Cruise", "Hornblower Niagara Cruises is the official boat tour operator for Niagara Falls, Canada. The only way to experience Canada's most iconic experience!", CURDATE(), CURDATE());
+    VALUES ("Activities", "Toronto","Niagara Falls Hornblower Cruise", 
+    "Hornblower Niagara Cruises is the official boat tour operator for Niagara Falls, Canada. The only way to experience Canada's most iconic experience!", CURDATE(), CURDATE());
 -- Vancouver Recommendations
     -- Events
     INSERT INTO Recommendations (category, city, name, startDate, endDate, description, createdAt, updatedAt)
@@ -127,7 +139,7 @@ VALUES ("Halifax", "Halifax", "http://s1.1zoom.net/big0/193/Brazil_Lighthouses_S
 
     INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
     VALUES ("Attractions", "Vancouver", "UBC Botanical Garden",
-    "Immerse yourself in the world of wild-collected plants at UBC Botanical Garden! Garden highlights include internationally recognized collections of magnolias and maples. Stroll through our impressive Asian garden with over 400 kinds of rhododendrons, travel the continents in our alpine garden, and explore our native rainforest garden", CURDATE(), CURDATE());
+    "Immerse yourself in the world of wild-collected plants at UBC Botanical Garden! Garden highlights include internationally recognized collections of magnolias and maples.", CURDATE(), CURDATE());
 
     INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
     VALUES ("Attractions", "Vancouver", "Prince of Whales Whale Watching",
