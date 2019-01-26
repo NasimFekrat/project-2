@@ -113,7 +113,6 @@ $(document).ready(function(){
 
   function getRec() {
     API.getRecommendation(selectedCity, cat).then(function(result){
-
       var user = JSON.parse(localStorage.getItem("user"));
       if (user === null){
         // no profile found, just load the result list;
@@ -175,12 +174,7 @@ $(document).ready(function(){
   $(".category").on("click", function(){
     cat = $(this).attr("data-val");
     $("#RecommendationList").empty();
-    API.getRecommendation(selectedCity, cat).then(function(result){
-      result.forEach((data) => {
-        $("#RecommendationList").show();
-        $("#RecommendationList").append("<input type=\"checkbox\" class=\"recList\" id=\'"+data.id+"' name='"+data.name+"' value='"+data.id+"'>"+data.name+"<br/>");
-      });
-    });
+    getRec();
   });
 
   // Sets the event listener for saving recommendations
