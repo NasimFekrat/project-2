@@ -28,6 +28,10 @@ module.exports = function(sequelize, DataTypes) {
     description: {
       type: DataTypes.STRING (500),
       allowNull: false,
+    },
+    image: {
+      type: DataTypes.STRING,
+      allowNull: true,
     }
   });
   Recommendation.associate = function(models) {

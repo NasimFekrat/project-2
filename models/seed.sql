@@ -31,85 +31,105 @@ VALUES ("Halifax", "Halifax", "http://s1.1zoom.net/big0/193/Brazil_Lighthouses_S
 
 -- Toronto RECOMMENDATIONS
     -- Events
-    INSERT INTO Recommendations (category, city, name, startDate, endDate, description, createdAt, updatedAt)
+    INSERT INTO Recommendations (category, city, name, startDate, endDate, description, image, createdAt, updatedAt)
     VALUES ("Events", "Toronto", "CNE","2019-08-16", "2019-09-02",
-    "This annual end-of-summer tradition takes the fall fair to new heights. Jammed with midway rides, live music, dog and pony shows and over-the-top culinary concoctions, The Ex is fun for everyone.", CURDATE(), CURDATE());
+    "This annual end-of-summer tradition takes the fall fair to new heights. Jammed with midway rides, live music, dog and pony shows and over-the-top culinary concoctions, The Ex is fun for everyone.",
+    "https://viewthevibe.com/wp-content/uploads/2018/08/cne_tickets_sale_2018.a52c7079.jpg", CURDATE(), CURDATE());
 
-    INSERT INTO Recommendations (category, city, name, startDate, endDate, description, createdAt, updatedAt)
+    INSERT INTO Recommendations (category, city, name, startDate, endDate, description, image, createdAt, updatedAt)
     VALUES ("Events", "Toronto", "TD Jazz Festival","2019-06-21","2019-06-30", 
-    "The Toronto Jazz Festival is a jazz event in Toronto which takes place for 10 days in late June through early July. Unlike the Beaches International Jazz Festival, most of the events are indoors and located throughout the downtown core.", CURDATE(), CURDATE());
+    "The Toronto Jazz Festival is a jazz event in Toronto which takes place for 10 days in late June through early July. Unlike the Beaches International Jazz Festival, most of the events are indoors and located throughout the downtown core.",
+    "http://torontojazz.com/sites/default/files/TJF2018thankyou.jpg", CURDATE(), CURDATE());
 
-    INSERT INTO Recommendations (category, city, name, startDate, endDate,  description, createdAt, updatedAt)
+    INSERT INTO Recommendations (category, city, name, startDate, endDate,  description, image, createdAt, updatedAt)
     VALUES ("Events", "Toronto", "Christmas Markets", "2019-11-15", "2019-12-23", 
-    "Enjoy the tradition, heritage and charm of a European Christmas Market, right in the heart of Toronto.", CURDATE(), CURDATE());
+    "Enjoy the tradition, heritage and charm of a European Christmas Market, right in the heart of Toronto.",
+    "https://media.blogto.com/articles/20171117-2048-XmasMarket27.jpg?w=2048&cmd=resize_then_crop&height=1365&quality=70", CURDATE(), CURDATE());
 
-    INSERT INTO Recommendations (category, city, name, startDate, endDate, description, createdAt, updatedAt)
+    INSERT INTO Recommendations (category, city, name, startDate, endDate, description, image, createdAt, updatedAt)
     VALUES ("Events", "Toronto", "Honda Indy", "2019-07-12", "2019-07-14", 
-    "The Honda Indy Toronto is an annual IndyCar Series race, held in Toronto, Ontario, Canada. Originally known as the Molson Indy Toronto.", CURDATE(), CURDATE());
+    "The Honda Indy Toronto is an annual IndyCar Series race, held in Toronto, Ontario, Canada. Originally known as the Molson Indy Toronto.",
+    "http://cdn2.hubspot.net/hubfs/328204/honda-indy-toronto-ggtag-4.jpg", CURDATE(), CURDATE());
 
-    INSERT INTO Recommendations (category, city, name, startDate, endDate, description, createdAt, updatedAt)
+    INSERT INTO Recommendations (category, city, name, startDate, endDate, description, image, createdAt, updatedAt)
     VALUES ("Events", "Toronto", "TIFF","2019-09-05", "2019-09-15", 
-    "The Toronto International Film Festival is one of the largest publicly attended film festivals in the world, attracting over 480,000 people annually. Since its founding in 1976, TIFF has grown to become a permanent destination for film culture.", CURDATE(), CURDATE());
+    "The Toronto International Film Festival is one of the largest publicly attended film festivals in the world, attracting over 480,000 people annually. Since its founding in 1976, TIFF has grown to become a permanent destination for film culture.",
+    "https://cdn.vox-cdn.com/thumbor/KE35vddeqAcboZvNc1aSgBV_Mq4=/0x0:2048x1365/1200x800/filters:focal(850x561:1176x887)/cdn.vox-cdn.com/uploads/chorus_image/image/56482865/tiff.0.jpg", CURDATE(), CURDATE());
 
     -- Attractions
-    INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
-    VALUES ("Attractions", "Toronto", "Royal Ontario Museum", "The Royal Ontario Museum is a museum of art, world culture and natural history in Toronto, Ontario, Canada. It is one of the largest museums in North America and the largest in Canada.", CURDATE(), CURDATE());
+    INSERT INTO Recommendations (category, city, name, description, image, createdAt, updatedAt)
+    VALUES ("Attractions", "Toronto", "Royal Ontario Museum", "The Royal Ontario Museum is a museum of art, world culture and natural history in Toronto, Ontario, Canada. It is one of the largest museums in North America and the largest in Canada.",
+    "https://libeskind.com/wp-content/uploads/rom-2280x1564.jpg", CURDATE(), CURDATE());
 
-    INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
-    VALUES ("Attractions", "Toronto", "Art Gallery of Ontario", "The Art Gallery of Ontario is an art museum in Toronto, Ontario, Canada. Its collection includes close to 95,000 works spanning the first century to the present day.", CURDATE(), CURDATE());
+    INSERT INTO Recommendations (category, city, name, description, image, createdAt, updatedAt)
+    VALUES ("Attractions", "Toronto", "Art Gallery of Ontario", "The Art Gallery of Ontario is an art museum in Toronto, Ontario, Canada. Its collection includes close to 95,000 works spanning the first century to the present day.",
+    "https://www.todocanada.ca/wp-content/uploads/6922629483_06fc2c0d60_b.jpg", CURDATE(), CURDATE());
 
-    INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
+    INSERT INTO Recommendations (category, city, name, description, image, createdAt, updatedAt)
     VALUES ("Attractions", "Toronto","Ripley's Aquarium", 
-    "Ripley's Aquarium of Canada is a public aquarium in Toronto, Ontario, Canada. The aquarium is one of three aquariums owned and operated by Ripley Entertainment.", CURDATE(), CURDATE());
+    "Ripley's Aquarium of Canada is a public aquarium in Toronto, Ontario, Canada. The aquarium is one of three aquariums owned and operated by Ripley Entertainment.",
+    "https://www.ripleyaquariums.com/canada/files/2014/03/Visit-Ripley-Aquarium-Canada-Toronto-shark.jpg", CURDATE(), CURDATE());
 
-    INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
+    INSERT INTO Recommendations (category, city, name, description, image, createdAt, updatedAt)
     VALUES ("Attractions", "Toronto","CN Tower", 
-    "The CN Tower is a 553.3 m-high concrete communications and observation tower located in Downtown Toronto, Ontario, Canada.", CURDATE(), CURDATE());
+    "The CN Tower is a 553.3 m-high concrete communications and observation tower located in Downtown Toronto, Ontario, Canada.",
+    "https://www.narcity.com/u/2018/04/18/20a47935c45cb539816727fc578c351ad216459a.png_1200x630.png", CURDATE(), CURDATE());
     
-    INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
+    INSERT INTO Recommendations (category, city, name, description, image, createdAt, updatedAt)
     VALUES ("Attractions", "Toronto","Toronto Zoo", 
-    "Encompassing 287 hectares (710 acres), the Toronto Zoo is the largest zoo in Canada. It is divided into seven zoogeographic regions: Indo-Malaya, Africa, Americas, Tundra Trek, Australasia, Eurasia, and the Canadian Domain.", CURDATE(), CURDATE());
+    "Encompassing 287 hectares (710 acres), the Toronto Zoo is the largest zoo in Canada. It is divided into seven zoogeographic regions: Indo-Malaya, Africa, Americas, Tundra Trek, Australasia, Eurasia, and the Canadian Domain.",
+    "https://www.kiss925.com/wp-content/uploads/sites/59/2018/01/SUNDAY-TORONTO-ZOO-1024x576.jpg", CURDATE(), CURDATE());
 
     -- Food
-    INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
+    INSERT INTO Recommendations (category, city, name, description, image, createdAt, updatedAt)
     VALUES ("Food", "Toronto", "Canoe", 
-    "A stylish, swanky space on the 54th floor, with inventive Canadian cuisine & exceptional views.", CURDATE(), CURDATE());
+    "A stylish, swanky space on the 54th floor, with inventive Canadian cuisine & exceptional views.",
+    "https://411.ca/blog/wp-content/uploads/2017/07/Canoe.jpg", CURDATE(), CURDATE());
 
-    INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
+    INSERT INTO Recommendations (category, city, name, description, image, createdAt, updatedAt)
     VALUES ("Food", "Toronto", "Richmond Station", 
-    "Co-owned by a 'Top Chef Canada' winner, this bustling spot offers a daily menu of seasonal cuisine.", CURDATE(), CURDATE());
+    "Co-owned by a 'Top Chef Canada' winner, this bustling spot offers a daily menu of seasonal cuisine.",
+    "https://www.blogto.com/listings/restaurants/upload/2012/10/20121015-richmondstation-03.jpg", CURDATE(), CURDATE());
 
-    INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
+    INSERT INTO Recommendations (category, city, name, description, image, createdAt, updatedAt)
     VALUES ("Food", "Toronto","Seven Lives", 
-    "This Kensington hot spot is the place to go. They feature Baja-style tacos with their #1 seller being their Baja fish tacos! It's a casual spot to enjoy with friends or to take to go when you're in a rush.", CURDATE(), CURDATE());
+    "This Kensington hot spot is the place to go. They feature Baja-style tacos with their #1 seller being their Baja fish tacos! It's a casual spot to enjoy with friends or to take to go when you're in a rush.",
+    "https://torontolife.com/wp-content/uploads/2013/04/introducing-seven-lives-toronto-01.jpg", CURDATE(), CURDATE());
 
-    INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
+    INSERT INTO Recommendations (category, city, name, description, image, createdAt, updatedAt)
     VALUES ("Food", "Toronto","PAI", 
-    "Nuit & Jeff Regular's casual Northern Thai spot serving dishes like salted crab & papaya salad.", CURDATE(), CURDATE());
+    "Nuit & Jeff Regular's casual Northern Thai spot serving dishes like salted crab & papaya salad.",
+    "https://images.happycow.net/venues/1024/69/08/hcmp69088_235330.jpeg", CURDATE(), CURDATE());
     
-    INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
+    INSERT INTO Recommendations (category, city, name, description, image, createdAt, updatedAt)
     VALUES ("Food", "Toronto", "Alo", 
-    "French tasting menu served in stylish, serene surrounds atop a Victorian building.", CURDATE(), CURDATE());
+    "French tasting menu served in stylish, serene surrounds atop a Victorian building.",
+    "https://www.thestar.com/content/dam/thestar/life/food_wine/2017/02/28/to-tal-domination-toronto-nabs-no-1-on-100-best-restaurants-list/alo-1--inside.jpg", CURDATE(), CURDATE());
 
     -- Activities
-    INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
+    INSERT INTO Recommendations (category, city, name, description, image, createdAt, updatedAt)
     VALUES ("Activites]", "Toronto","Lakeridge Resort", 
-    "Lakeridge Resort is also in the Oak Ridges Moraine in Uxbridge, Ontario. It has more than 20 runs spread over 70 acres, with black diamond trails for experts as well as beginner hills.", CURDATE(), CURDATE());
+    "Lakeridge Resort is also in the Oak Ridges Moraine in Uxbridge, Ontario. It has more than 20 runs spread over 70 acres, with black diamond trails for experts as well as beginner hills.",
+    "http://www.greatwindows.ca/wp-content/uploads/2017/11/Lakeridge-Ski-Resort.png", CURDATE(), CURDATE());
 
-    INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
+    INSERT INTO Recommendations (category, city, name, description, image, createdAt, updatedAt)
     VALUES ("Activities", "Toronto", "The Second City", 
-    "The Second City is renown as the world's premier comedy theatre, with critically-acclaimed live improv and sketch comedy shows on stage every night. ", CURDATE(), CURDATE());
+    "The Second City is renown as the world's premier comedy theatre, with critically-acclaimed live improv and sketch comedy shows on stage every night. ",
+    "https://i0.wp.com/www.secondcity.com/wp-content/uploads/2014/08/second-city-toronto-mainstage.jpg?fit=1500%2C1000&ssl=1.jpg", CURDATE(), CURDATE());
 
-    INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
+    INSERT INTO Recommendations (category, city, name, description, image, createdAt, updatedAt)
     VALUES ("Activities", "Toronto","Toronto Heli Tours", 
-    "A 15-kilometre helicopter ride reveals panoramic glimpses of Toronto from 2,000 feet above sea level", CURDATE(), CURDATE());
+    "A 15-kilometre helicopter ride reveals panoramic glimpses of Toronto from 2,000 feet above sea level",
+    "https://media-cdn.tripadvisor.com/media/photo-s/0f/62/ae/a0/7-minute-helicopter-tour.jpg", CURDATE(), CURDATE());
 
-    INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
-    VALUES ("Activities", "Toronto","Canada's Wonderland","Canada's Wonderland is a 134-hectare theme park located in Vaughan, Ontario, a suburb approximately 40 kilometres north of Downtown Toronto. It's the largest theme park in Canada.", CURDATE(), CURDATE());
+    INSERT INTO Recommendations (category, city, name, description, image, createdAt, updatedAt)
+    VALUES ("Activities", "Toronto","Canada's Wonderland","Canada's Wonderland is a 134-hectare theme park located in Vaughan, Ontario, a suburb approximately 40 kilometres north of Downtown Toronto. It's the largest theme park in Canada.",
+    "https://ebosscanada.com/wp-content/uploads/2018/05/Canadas-Wonderland_03a.jpg", CURDATE(), CURDATE());
     
-    INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
+    INSERT INTO Recommendations (category, city, name, description, image, createdAt, updatedAt)
     VALUES ("Activities", "Toronto","Niagara Falls Hornblower Cruise", 
-    "Hornblower Niagara Cruises is the official boat tour operator for Niagara Falls, Canada. The only way to experience Canada's most iconic experience!", CURDATE(), CURDATE());
+    "Hornblower Niagara Cruises is the official boat tour operator for Niagara Falls, Canada. The only way to experience Canada's most iconic experience!",
+    "https://www.cliftonhill.com/sites/default/files/styles/slider/public/places/primary-images/niagara-hornblower.jpg?itok=HuzhcL8l.jpg", CURDATE(), CURDATE());
 -- Vancouver Recommendations
     -- Events
     INSERT INTO Recommendations (category, city, name, startDate, endDate, description, createdAt, updatedAt)
