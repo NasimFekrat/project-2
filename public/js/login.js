@@ -40,7 +40,7 @@ $(document).ready(function(){
       return;
     }
     API.retrieveUser(email).then(function(userProfile){
-      if (userProfile.length === 0){
+      if (!userProfile || userProfile.length === 0){
         $("#error").show();
         $("#existingUserEmail").val("");
         $("#newUserEmail").val("");
