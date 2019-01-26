@@ -4,10 +4,16 @@
 
 .footer , .push{
   height: 30px;
-
+  font-family: 'Luckiest Guy', cursive;
+}
 
 html {
   scroll-behavior: smooth;
+  
+}
+
+.container {
+  font-family: 'Luckiest Guy', cursive;
 }
 
 body {
