@@ -37,7 +37,7 @@ module.exports = function(app) {
   //Get user data
   app.get("/api/user/:email", function(req, res) {
     var email = req.params.email;
-    db.User.findAll({
+    db.User.findOne({
       where: {email : email}
     }).then(function(user) {
       res.json(user);
@@ -74,7 +74,7 @@ module.exports = function(app) {
       return res.json(createUser);
     }).catch(function(){
       // try retrieving the user,
-      db.User.findAll({
+      db.User.findOne({
         where: {email: req.body.email}
       }).then(function(resp) {
         return res.json(resp);
