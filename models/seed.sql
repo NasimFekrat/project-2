@@ -45,11 +45,11 @@ VALUES ("Halifax", "Halifax", "http://s1.1zoom.net/big0/193/Brazil_Lighthouses_S
 
     INSERT INTO Recommendations (category, city, name, startDate, endDate, description, createdAt, updatedAt)
     VALUES ("Events", "Toronto", "Honda Indy", "2019-07-12", "2019-07-14", 
-    "The Honda Indy Toronto is an annual IndyCar Series race, held in Toronto, Ontario, Canada. Originally known as the Molson Indy Toronto, it was a Champ Car World Series race held annually from 1986 to 2007. The track has 11 turns, is a 2.874-kilometre street circuit, and is located at Exhibition Place.", CURDATE(), CURDATE());
+    "The Honda Indy Toronto is an annual IndyCar Series race, held in Toronto, Ontario, Canada. Originally known as the Molson Indy Toronto.", CURDATE(), CURDATE());
 
     INSERT INTO Recommendations (category, city, name, startDate, endDate, description, createdAt, updatedAt)
     VALUES ("Events", "Toronto", "TIFF","2019-09-05", "2019-09-15", 
-    "The Toronto International Film Festival is one of the largest publicly attended film festivals in the world, attracting over 480,000 people annually. Since its founding in 1976, TIFF has grown to become a permanent destination for film culture operating out of the TIFF Bell Lightbox, located in downtown Toronto.", CURDATE(), CURDATE());
+    "The Toronto International Film Festival is one of the largest publicly attended film festivals in the world, attracting over 480,000 people annually. Since its founding in 1976, TIFF has grown to become a permanent destination for film culture.", CURDATE(), CURDATE());
 
     -- Attractions
     INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
@@ -59,13 +59,13 @@ VALUES ("Halifax", "Halifax", "http://s1.1zoom.net/big0/193/Brazil_Lighthouses_S
     VALUES ("Attractions", "Toronto", "Art Gallery of Ontario", "The Art Gallery of Ontario is an art museum in Toronto, Ontario, Canada. Its collection includes close to 95,000 works spanning the first century to the present day.", CURDATE(), CURDATE());
 
     INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
-    VALUES ("Attractions", "Toronto","Ripley's Aquarium", "Ripley's Aquarium of Canada is a public aquarium in Toronto, Ontario, Canada. The aquarium is one of three aquariums owned and operated by Ripley Entertainment. It is located in downtown Toronto, just southeast of the CN Tower.", CURDATE(), CURDATE());
+    VALUES ("Attractions", "Toronto","Ripley's Aquarium", "Ripley's Aquarium of Canada is a public aquarium in Toronto, Ontario, Canada. The aquarium is one of three aquariums owned and operated by Ripley Entertainment.", CURDATE(), CURDATE());
 
     INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
     VALUES ("Attractions", "Toronto","CN Tower", "The CN Tower is a 553.3 m-high concrete communications and observation tower located in Downtown Toronto, Ontario, Canada.", CURDATE(), CURDATE());
     
     INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
-    VALUES ("Attractions", "Toronto","Toronto Zoo", "Encompassing 287 hectares (710 acres), the Toronto Zoo is the largest zoo in Canada. It is divided into seven zoogeographic regions: Indo-Malaya, Africa, Americas, Tundra Trek, Australasia, Eurasia, and the Canadian Domain. Some animals are displayed indoors in pavilions and outdoors in what would be their naturalistic environments, with viewing at many levels.", CURDATE(), CURDATE());
+    VALUES ("Attractions", "Toronto","Toronto Zoo", "Encompassing 287 hectares (710 acres), the Toronto Zoo is the largest zoo in Canada. It is divided into seven zoogeographic regions: Indo-Malaya, Africa, Americas, Tundra Trek, Australasia, Eurasia, and the Canadian Domain.", CURDATE(), CURDATE());
 
     -- Food
     INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
@@ -94,7 +94,7 @@ VALUES ("Halifax", "Halifax", "http://s1.1zoom.net/big0/193/Brazil_Lighthouses_S
     VALUES ("Activities", "Toronto","Toronto Heli Tours", "A 15-kilometre helicopter ride reveals panoramic glimpses of Toronto from 2,000 feet above sea level", CURDATE(), CURDATE());
 
     INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
-    VALUES ("Activities", "Toronto","Canada's Wonderland","Canada's Wonderland is a 134-hectare theme park located in Vaughan, Ontario, a suburb approximately 40 kilometres north of Downtown Toronto. Opened in 1981 by the Taft Broadcasting Company and The Great-West Life Assurance Company as the first major theme park in Canada, it remains the country's largest.", CURDATE(), CURDATE());
+    VALUES ("Activities", "Toronto","Canada's Wonderland","Canada's Wonderland is a 134-hectare theme park located in Vaughan, Ontario, a suburb approximately 40 kilometres north of Downtown Toronto. It's the largest theme park in Canada.", CURDATE(), CURDATE());
     
     INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
     VALUES ("Activities", "Toronto","Niagara Falls Hornblower Cruise", "Hornblower Niagara Cruises is the official boat tour operator for Niagara Falls, Canada. The only way to experience Canada's most iconic experience!", CURDATE(), CURDATE());
@@ -118,7 +118,7 @@ VALUES ("Halifax", "Halifax", "http://s1.1zoom.net/big0/193/Brazil_Lighthouses_S
 
     INSERT INTO Recommendations (category, city, name, startDate, endDate, description, createdAt, updatedAt)
     VALUES ("Events", "Vancouver", "Vancouver Craft Beer Week","2019-05-31", "2019-06-09",
-    "Vancouver Craft Beer Week started in 2010 at a small venue in Vancouver hosting about 100 beer aficionados and 15 breweries. Over the past 9 years, it has evolved from Canada’s first-ever craft beer week into a cultural engine that showcases music, food, art, and craft beer at events across the city, from the last weekend of May to the first weekend of June every year.", CURDATE(), CURDATE());
+    "Vancouver Craft Beer Week started in 2010 at a small venue in Vancouver hosting about 100 beer aficionados and 15 breweries. A cultural engine that showcases music, food, art, and craft beer at events across the city.", CURDATE(), CURDATE());
 
     -- Attractions
     INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
