@@ -10,9 +10,9 @@
         <li class="nav-item list-inline-item">
           <a class="nav-link text-danger" href="#top">Home</a>
         </li>
-        <li class="nav-item list-inline-item">
-          <a class="nav-link text-danger" href="profile.handlebars">Profile</a>
-        </li>
+        {{!-- <li class="nav-item list-inline-item">
+          <a class="nav-link text-danger" href="profile">Profile</a>
+        </li> --}}
       </ul>
     </nav>
   </div>
@@ -53,14 +53,17 @@
 <div id="home">
   <div class="container my-5">
     <div id="categoriesGroup" class="row" style="display:none">
-      <div id="attractions" class="category col-sm-4" data-val="attractions">
+      <div id="attractions" class="category col-sm-3" data-val="attractions">
         <img src="/img/attraction_img.png" alt="Attractions" class="img-thumbnail rounded">
       </div>
-      <div id="food" class="category col-sm-4" data-val="food">
+      <div id="food" class="category col-sm-3" data-val="food">
         <img src="/img/food_img.png" alt="Food" class="img-thumbnail rounded">
       </div>
-      <div id="activities" class="category" data-val="activities">
+      <div id="activities" class="category col-sm-3" data-val="activities">
         <img src="/img/activity_img.png" alt="Activities" class="img-thumbnail rounded">
+      </div>
+      <div id="events" class="category col-sm-3" data-val="events">
+        <img src="/img/event_img.png" alt="Events" class="img-thumbnail rounded">
       </div>
     </div>
     <!-- Recommendation -->

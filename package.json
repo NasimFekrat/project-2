@@ -16,7 +16,6 @@
     "express-handlebars": "^3.0.0",
     "loadash": "^1.0.0",
     "mysql2": "^1.6.4",
-    "path": "^0.12.7",
     "sequelize": "^4.41.2"
   },
   "devDependencies": {
