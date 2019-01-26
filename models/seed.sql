@@ -45,56 +45,68 @@ VALUES ("Halifax", "Halifax", "http://s1.1zoom.net/big0/193/Brazil_Lighthouses_S
 
     INSERT INTO Recommendations (category, city, name, startDate, endDate, description, createdAt, updatedAt)
     VALUES ("Events", "Toronto", "Honda Indy", "2019-07-12", "2019-07-14", 
-    "The Honda Indy Toronto is an annual IndyCar Series race, held in Toronto, Ontario, Canada. Originally known as the Molson Indy Toronto, it was a Champ Car World Series race held annually from 1986 to 2007. The track has 11 turns, is a 2.874-kilometre street circuit, and is located at Exhibition Place.", CURDATE(), CURDATE());
+    "The Honda Indy Toronto is an annual IndyCar Series race, held in Toronto, Ontario, Canada. Originally known as the Molson Indy Toronto, it was a Champ Car World Series race held annually from 1986 to 2007.", CURDATE(), CURDATE());
 
     INSERT INTO Recommendations (category, city, name, startDate, endDate, description, createdAt, updatedAt)
     VALUES ("Events", "Toronto", "TIFF","2019-09-05", "2019-09-15", 
-    "The Toronto International Film Festival is one of the largest publicly attended film festivals in the world, attracting over 480,000 people annually. Since its founding in 1976, TIFF has grown to become a permanent destination for film culture operating out of the TIFF Bell Lightbox, located in downtown Toronto.", CURDATE(), CURDATE());
+    "The Toronto International Film Festival is one of the largest publicly attended film festivals in the world, attracting over 480,000 people annually.", CURDATE(), CURDATE());
 
     -- Attractions
     INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
-    VALUES ("Attractions", "Toronto", "Royal Ontario Museum", "The Royal Ontario Museum is a museum of art, world culture and natural history in Toronto, Ontario, Canada. It is one of the largest museums in North America and the largest in Canada.", CURDATE(), CURDATE());
+    VALUES ("Attractions", "Toronto", "Royal Ontario Museum", 
+    "The Royal Ontario Museum is a museum of art, world culture and natural history in Toronto, Ontario, Canada. It is one of the largest museums in North America and the largest in Canada.", CURDATE(), CURDATE());
 
     INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
-    VALUES ("Attractions", "Toronto", "Art Gallery of Ontario", "The Art Gallery of Ontario is an art museum in Toronto, Ontario, Canada. Its collection includes close to 95,000 works spanning the first century to the present day.", CURDATE(), CURDATE());
+    VALUES ("Attractions", "Toronto", "Art Gallery of Ontario", 
+    "The Art Gallery of Ontario is an art museum in Toronto, Ontario, Canada. Its collection includes close to 95,000 works spanning the first century to the present day.", CURDATE(), CURDATE());
 
     INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
-    VALUES ("Attractions", "Toronto","Ripley's Aquarium", "Ripley's Aquarium of Canada is a public aquarium in Toronto, Ontario, Canada. The aquarium is one of three aquariums owned and operated by Ripley Entertainment. It is located in downtown Toronto, just southeast of the CN Tower.", CURDATE(), CURDATE());
+    VALUES ("Attractions", "Toronto","Ripley's Aquarium", 
+    "Ripley's Aquarium of Canada is a public aquarium in Toronto, Ontario, Canada. The aquarium is one of three aquariums owned and operated by Ripley Entertainment.", CURDATE(), CURDATE());
 
     INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
-    VALUES ("Attractions", "Toronto","CN Tower", "The CN Tower is a 553.3 m-high concrete communications and observation tower located in Downtown Toronto, Ontario, Canada.", CURDATE(), CURDATE());
+    VALUES ("Attractions", "Toronto","CN Tower", 
+    "The CN Tower is a 553.3 m-high concrete communications and observation tower located in Downtown Toronto, Ontario, Canada.", CURDATE(), CURDATE());
     
     INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
-    VALUES ("Attractions", "Toronto","Toronto Zoo", "Encompassing 287 hectares (710 acres), the Toronto Zoo is the largest zoo in Canada. It is divided into seven zoogeographic regions: Indo-Malaya, Africa, Americas, Tundra Trek, Australasia, Eurasia, and the Canadian Domain. Some animals are displayed indoors in pavilions and outdoors in what would be their naturalistic environments, with viewing at many levels.", CURDATE(), CURDATE());
+    VALUES ("Attractions", "Toronto","Toronto Zoo", 
+    "Encompassing 287 hectares (710 acres), the Toronto Zoo is the largest zoo in Canada.", CURDATE(), CURDATE());
 
     -- Food
     INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
-    VALUES ("Food", "Toronto", "Canoe", "A stylish, swanky space on the 54th floor, with inventive Canadian cuisine & exceptional views.", CURDATE(), CURDATE());
+    VALUES ("Food", "Toronto", "Canoe", 
+    "A stylish, swanky space on the 54th floor, with inventive Canadian cuisine & exceptional views.", CURDATE(), CURDATE());
 
     INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
-    VALUES ("Food", "Toronto", "Richmond Station", "Co-owned by a 'Top Chef Canada' winner, this bustling spot offers a daily menu of seasonal cuisine.", CURDATE(), CURDATE());
+    VALUES ("Food", "Toronto", "Richmond Station", 
+    "Co-owned by a 'Top Chef Canada' winner, this bustling spot offers a daily menu of seasonal cuisine.", CURDATE(), CURDATE());
 
     INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
-    VALUES ("Food", "Toronto","Seven Lives", "This Kensington hot spot is the place to go. They feature Baja-style tacos with their #1 seller being their Baja fish tacos! It's a casual spot to enjoy with friends or to take to go when you're in a rush.", CURDATE(), CURDATE());
+    VALUES ("Food", "Toronto","Seven Lives", 
+    "This Kensington hot spot is the place to go. They feature Baja-style tacos with their #1 seller being their Baja fish tacos!", CURDATE(), CURDATE());
 
     INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
-    VALUES ("Food", "Toronto","PAI", "Nuit & Jeff Regular's casual Northern Thai spot serving dishes like salted crab & papaya salad.", CURDATE(), CURDATE());
+    VALUES ("Food", "Toronto","PAI",
+    "Nuit & Jeff Regular's casual Northern Thai spot serving dishes like salted crab & papaya salad.", CURDATE(), CURDATE());
     
     INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
-    VALUES ("Food", "Toronto", "Alo", "French tasting menu served in stylish, serene surrounds atop a Victorian building.", CURDATE(), CURDATE());
+    VALUES ("Food", "Toronto", "Alo", 
+    "French tasting menu served in stylish, serene surrounds atop a Victorian building.", CURDATE(), CURDATE());
 
     -- Activities
     INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
-    VALUES ("Activites]", "Toronto","Lakeridge Resort", "Lakeridge Resort is also in the Oak Ridges Moraine in Uxbridge, Ontario. It has more than 20 runs spread over 70 acres, with black diamond trails for experts as well as beginner hills.", CURDATE(), CURDATE());
+    VALUES ("Activites]", "Toronto","Lakeridge Resort", 
+    "Lakeridge Resort is also in the Oak Ridges Moraine in Uxbridge, Ontario. It has more than 20 runs spread over 70 acres.", CURDATE(), CURDATE());
 
     INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
-    VALUES ("Activities", "Toronto", "The Second City", "The Second City is renown as the world's premier comedy theatre, with critically-acclaimed live improv and sketch comedy shows on stage every night. ", CURDATE(), CURDATE());
+    VALUES ("Activities", "Toronto", "The Second City", "The Second City is renown as the world's premier comedy theatre.", CURDATE(), CURDATE());
 
     INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
     VALUES ("Activities", "Toronto","Toronto Heli Tours", "A 15-kilometre helicopter ride reveals panoramic glimpses of Toronto from 2,000 feet above sea level", CURDATE(), CURDATE());
 
     INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
-    VALUES ("Activities", "Toronto","Canada's Wonderland","Canada's Wonderland is a 134-hectare theme park located in Vaughan, Ontario, a suburb approximately 40 kilometres north of Downtown Toronto. Opened in 1981 by the Taft Broadcasting Company and The Great-West Life Assurance Company as the first major theme park in Canada, it remains the country's largest.", CURDATE(), CURDATE());
+    VALUES ("Activities", "Toronto","Canada's Wonderland",
+    "Canada's Wonderland is a 134-hectare theme park located in Vaughan, Ontario, a suburb approximately 40 kilometres north of Downtown Toronto. It's the largest them park in Canada.", CURDATE(), CURDATE());
     
     INSERT INTO Recommendations (category, city, name, description, createdAt, updatedAt)
     VALUES ("Activities", "Toronto","Niagara Falls Hornblower Cruise", "Hornblower Niagara Cruises is the official boat tour operator for Niagara Falls, Canada. The only way to experience Canada's most iconic experience!", CURDATE(), CURDATE());
