@@ -113,7 +113,6 @@ $(document).ready(function(){
 
   function getRec() {
     API.getRecommendation(selectedCity, cat).then(function(result){
-
       var user = JSON.parse(localStorage.getItem("user"));
       if (user === null){
         // no profile found, just load the result list;

@@ -8,6 +8,11 @@ module.exports = function(app) {
     res.render("index", {});
   });
 
+  // profile page
+  app.get("/profile", function(req, res){
+    res.render("profile", {});
+  });
+
   app.get("/", function(req, res){
     res.render("login", {});
   });

@@ -31,46 +31,50 @@
       <div class="carousel-item">
         <img class="d-block w-100" src="/img/3.png" alt="Designed by Freepik">
       </div>
+      <div class="carousel-caption d-none d-md-block">
+        <form class="form-row align-items-center my-5">
+          <div class="col-sm-4"></div>
+          <div class="col-sm-4 pl-auto my-1">
+            <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+              <option selected>Choose a city</option>
+            </select>
+          </div>
+          {{!-- <div class="col-sm-4 ml-0 my-1">
+            <button type="submit" class="btn btn-dark text-danger">Find</button>
+          </div> --}}
+        </form>
+      </div>
     </div>
   </div>
-  <form class="form-row align-items-center my-5">
-    <div class="col-sm-4"></div>
-    <div class="col-sm-4 pl-auto my-1">
-      <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
-      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-        <option selected>Choose a city</option>
 
-      </select>
-    </div>
-    {{!-- <div class="col-sm-4 ml-0 my-1">
-      <button type="submit" class="btn btn-dark text-danger">Find</button>
-    </div> --}}
-  </form>
 </section>
-<!-- ======= slider part end ======= -->
+<!-- ======= slider part end ===/img/3.png==== -->
 <div id="home">
- <div class="container">
-   <div class="row">
-     <div class="col-8 offset-2">
-
-
-       <div id="categoriesGroup" style="display:none">
-       <div id="attractions" class="category" data-val="attractions">attractions</div>
-       <br/>
-       <div id="food" class="category" data-val="food">food</div>
-        <br/>
-       <div id="activities" class="category" data-val="activities">activities</div>
-        <br/>
-       </div>
-
-     <!-- Recommendation -->
-       <div id="RecommendationList" style="display:none">
-
-       </div>
-
-     </div>
-   </div>
- </div>
+  <div class="container my-5">
+    <div id="categoriesGroup" class="row" style="display:none">
+      <div id="attractions" class="category col-sm-4" data-val="attractions">
+        <img src="/img/attraction_img.png" alt="Attractions" class="img-thumbnail rounded">
+      </div>
+      <div id="food" class="category col-sm-4" data-val="food">
+        <img src="/img/food_img.png" alt="Food" class="img-thumbnail rounded">
+      </div>
+      <div id="activities" class="category" data-val="activities">
+        <img src="/img/activity_img.png" alt="Activities" class="img-thumbnail rounded">
+      </div>
+      <div id="events" class="category" data-val="events">
+        <img src="/img/event_img.png" alt="Events" class="img-thumbnail rounded">
+      </div>
+    </div>
+    <!-- Recommendation -->
+    <div class="row mt-3">
+      <div class="col-sm-12">
+        <ul class="list-group">
+          <li class="list-group-item" id="RecommendationList" style="display:none"></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </div>
 <!-- ======= Footer Part Start ======= -->
 <div class="push"></div>
