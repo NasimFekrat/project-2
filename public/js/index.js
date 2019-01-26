@@ -160,6 +160,7 @@ $(document).ready(function(){
   // Sets event listener for destination selection
   // once the city is selected, show categories
   $("#inlineFormCustomSelect").change(function(){
+    $("#RecommendationList").empty();
     if ($(this).val() !== "na"){
       $("#categoriesGroup").show();
       selectedCity = $(this).val();
@@ -199,7 +200,6 @@ $(document).ready(function(){
 
     var status = $(this).is(":checked");
 
-    console.log (user.id);
     var reqData = {
       userId: user.id,
       recId: id,
