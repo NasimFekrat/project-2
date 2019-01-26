@@ -1,20 +1,40 @@
- <!--Overall Grid-->
-    <div class="container">
-        <!--Sign In/Registration Form-->
-        <form class="form-signin-register">
-            <i class="fas fa-address-card"></i>
-            <!--Sign In-->
-            <div id="error"  class="alert alert-danger" role="alert" style="display: none;">User not found, please try again!</div>
-            <h1 class="h3 mb-3 font-weight-normal">Sign In</h1>
-            <label for="existingUserEmail" class="sr-only">Email Address</label>
-            <input type="email" id="existingUserEmail" class="form-control" placeholder="Email Address">
-            <button class="btn btn-lg btn-primary btn-block" type="submit" id="loginButton">Sign in</button>
-            <!--Register-->
-            <h1 class="h3 mb-3 font-weight-normal">Register</h1>
-            <label for="newUserEmail" class="sr-only">Email Address</label>
-            <input type="email" id="newUserEmail" class="form-control" placeholder="Email Address">
-            <button class="btn btn-lg btn-danger btn-block" type="submit" id="registerButton">Register</button>
-        </form>
+<!--Overall Grid-->
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+            <img src="/img/favicon.png" class="card-img-top">
+            <h1 class="card-body text-danger text-center">Discover Canada</h1>
+        </div>
+        <div class="col-sm-4"></div>
     </div>
+    <div class="row mt-5">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+            <!--Sign In/Registration Form-->
+            <form class="form-signin-register">
+                <i class="fas fa-address-card"></i>
+                <!--Sign In-->
+                <div id="error" class="alert alert-danger" role="alert" style="display: none;">User not found, please
+                    try
+                    again!</div>
+                <h1 class="mb-3 font-weight-normal text-center">Sign In</h1>
+                <label for="existingUserEmail" class="sr-only">Email Address</label>
+                <input type="email" id="existingUserEmail" class="form-control" placeholder="Email Address">
+                <button class="btn btn-lg btn-primary btn-block mt-3" type="submit" id="loginButton">Sign in</button>
+                <!--Register-->
+                <h1 class="mt-4 mb-3 font-weight-normal text-center">Sign Up</h1>
+                <p class="text-center">If you already do not have an account!</p>
+                
+                <label for="newUserEmail" class="sr-only">Email Address</label>
+                <input type="email" id="newUserEmail" class="form-control" placeholder="Email Address">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your
+                    email with anyone else.</small>
+                <button class="btn btn-lg btn-danger btn-block mt-3 mb-5" type="submit" id="registerButton">Register</button>
+            </form>
+        </div>
+        <div class="col-sm-4"></div>
+    </div>
+</div>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="./js/login.js"></script>

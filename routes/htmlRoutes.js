@@ -5,7 +5,6 @@ module.exports = function(app) {
 
   // index route
   app.get("/index", function(req, res){
-    // res.sendFile(path.join(__dirname,""));
     res.render("index", {});
   });
 

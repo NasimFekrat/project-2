@@ -14,6 +14,7 @@
     "dotenv": "^6.2.0",
     "express": "^4.16.3",
     "express-handlebars": "^3.0.0",
+    "loadash": "^1.0.0",
     "mysql2": "^1.6.4",
     "path": "^0.12.7",
     "sequelize": "^4.41.2"
@@ -34,9 +35,12 @@
     "type": "git",
     "url": "git+https://github.com/NasimFekrat/project-2.git"
   },
-  "author": "",
+  "author": "arjun",
   "bugs": {
     "url": "https://github.com/NasimFekrat/project-2/issues"
   },
-  "homepage": "https://github.com/NasimFekrat/project-2#readme"
+  "homepage": "https://github.com/NasimFekrat/project-2#readme",
+  "keywords": [
+    "portfolio"
+  ]
 }
