@@ -139,7 +139,7 @@ $(document).ready(function(){
     API.getRecommendation(selectedCity, cat).then(function(result){
       result.forEach((data) => {
         $("#RecommendationList").show();
-        $("#RecommendationList").append("<input type=\"checkbox\" class=\"recList\" id=\'"+data.id+"' name='"+data.name+"' value='"+data.id+"'>"+ data.name+"<br/>");
+        $("#RecommendationList").append("<input type=\"checkbox\" class=\"recList\" id=\'"+data.id+"' name='"+data.name+"' value='"+data.id+"'>"+data.name+"<br/>");
       });
     });
   });
