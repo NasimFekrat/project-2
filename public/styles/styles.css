@@ -2,8 +2,13 @@
   line-height: 2.5;
 }
 
+body {
+  font-family: 'Luckiest Guy', cursive;
+}
+
 .footer , .push{
   height: 30px;
+
   font-family: 'Luckiest Guy', cursive;
 }
 
@@ -14,10 +19,12 @@ html {
 
 .container {
   font-family: 'Luckiest Guy', cursive;
+
 }
+  
 
 body {
-  background: url("images/pic6.png") #B0DFE5 no-repeat top center fixed;
+  background: url("/img/2.png") #F63737 no-repeat top center fixed;
   background-size: cover;
   margin: 0;
   padding: 0;
@@ -54,19 +61,38 @@ h3 {
   background-size: cover;
 }
 
+.travel-list {
+  margin-top: 120px;
+}
+
 .list-item {
   border: 1px solid white;
 }
+
 
 button {
   background-color: transparent;
   color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+.scroll {
+  overflow: auto;
+}
 li:hover {
-  color: white; 
-  background-color: #44BEAC;
-  border: white;
+  color: #97999C;
+  background-color: #FBB031;
+  border: #97999C;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  
+  background-color: #DB3545;
 }
 
 li {
@@ -74,23 +100,49 @@ li {
   border: 2px solid white;
 }
 
+
+
 button:hover {
-  color: black;
-  background-color: #19B360;
+  color: white;
+  background-color: #DB3545;
 }
 #home-button {
+  border: 2px solid #97999C;
   float: right;
 }
 
-#save-changes {
-  float: right;
-}
+
 
 #cathegories {
+  float: right;
+  border: 2px solid #97999C;
+}
+.checked {
   float: right;
 }
 
 .buttons {
   position: sticky;
 
+}
+
+.user-selection {
+  border: 1px solid white;
+}
+
+dt {
+  color: white;
+}
+
+dd {
+  color: white;
+}
+
+label {
+  color: white;
+}
+
+#save-changes {
+  float: right;
+  border: 2px solid #97999C;
 }
