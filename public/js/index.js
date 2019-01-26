@@ -1,12 +1,12 @@
 // Get references to page elements
+
 var $exampleText = $("#example-text");
 var $exampleDescription = $("#example-description");
 var $submitBtn = $("#submit");
 var $exampleList = $("#example-list");
 
 var selectedCity = "";
-
-
+var cat = "";
 
 // The API object contains methods for each kind of request we"ll make
 var API = {
@@ -32,10 +32,10 @@ var API = {
       type: "GET"
     });
   },
-  deleteExample: function(id) {
+  getItineraryByCity: function (user, city) {
     return $.ajax({
-      url: "api/examples/" + id,
-      type: "DELETE"
+      url: "/api/itinerary/"+ user + "/" + city,
+      type: "GET"
     });
   }
 };
@@ -111,11 +111,51 @@ $exampleList.on("click", ".delete", handleDeleteBtnClick);
 
 $(document).ready(function(){
 
+  function getRec() {
+    API.getRecommendation(selectedCity, cat).then(function(result){
+
+      var user = JSON.parse(localStorage.getItem("user"));
+      if (user === null){
+        // no profile found, just load the result list;
+        result.forEach((data) => {
+          $("#RecommendationList").show();
+          $("#RecommendationList").append("<input type=\"checkbox\" class=\"recList\" id=\'"+data.id+"' name='"+data.name+"' value='"+data.id+"'>"+ data.name+"<br/>");
+        });
+      }else {
+        // get the list of saved itinerary for user
+        API.getItineraryByCity(user.id , selectedCity).then(function(savedItinerary){
+          result.forEach((data) => {
+            $("#RecommendationList").show();
+            if (_.indexOf(savedItinerary.result, data.id)=== -1){
+              $("#RecommendationList").append("<input type=\"checkbox\" class=\"recList\" id=\'"+data.id+"' name='"+data.name+"' value='"+data.id+"'>"+ data.name+"<br/>");
+            } else {
+              $("#RecommendationList").append("<input type=\"checkbox\" class=\"recList\" id=\'"+data.id+"' name='"+data.name+"' value='"+data.id+"' checked>"+ data.name+"<br/>");
+            }
+          });
+        });
+      }
+    });
+  }
+
+  function setPref(){
+    // check if the user has saved preference
+    var pref = JSON.parse(localStorage.getItem("pref"));
+    if (null !== pref){
+      selectedCity = pref.city;
+      cat = pref.cat;
+      localStorage.removeItem("pref");
+      getRec();
+      $("#inlineFormCustomSelect").val(selectedCity);
+      $("#categoriesGroup").show();
+    }
+  }
+
   // Populates the desintation drop down menu
   API.getDestination().then(function(data){
     data.forEach(item => {
       $("#inlineFormCustomSelect").append($("<option>", {value: item.city, text: item.displayName}));
     });
+    setPref();
   });
 
   // Sets event listener for destination selection
@@ -133,8 +173,7 @@ $(document).ready(function(){
   // Sets event listener for getting recommendation once
   // the destination and categories have been selected
   $(".category").on("click", function(){
-    var cat = $(this).attr("data-val");
-
+    cat = $(this).attr("data-val");
     $("#RecommendationList").empty();
     API.getRecommendation(selectedCity, cat).then(function(result){
       result.forEach((data) => {
@@ -148,18 +187,27 @@ $(document).ready(function(){
   $(document.body).on("click", ".recList" ,function(){
     var id = $(this).attr("id");
     var user = JSON.parse(localStorage.getItem("user"));
+
     if (user === null){
-      // ask user to sign in
-      // alert ("user is null");
+      // find city and attraction list
+      var pref = {
+        city: selectedCity,
+        cat: cat
+      };
+      localStorage.setItem("pref", JSON.stringify(pref));
+
+      window.location.replace("/");
+
     } else {
       // continue on saving the preference
       // alert ("user is not null");
     }
-    user = 1;
+
     var status = $(this).is(":checked");
 
+    console.log (user.id);
     var reqData = {
-      userId: user,
+      userId: user.id,
       recId: id,
       status: status
     };

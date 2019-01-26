@@ -5,8 +5,12 @@ module.exports = function(app) {
 
   // index route
   app.get("/index", function(req, res){
-    // res.sendFile(path.join(__dirname,""));
     res.render("index", {});
+  });
+
+  // profile page
+  app.get("/profile", function(req, res){
+    res.render("profile", {});
   });
 
   app.get("/", function(req, res){
